@@ -5,10 +5,10 @@ Description: "Neo4j is an open-source, high-performance, enterprise-grade NOSQL 
 Version: '2.1'
 License: GNU GENERAL PUBLIC LICENSE
 License-Url: 
-Vendor: Acciona IT
-Cartridge-Version: 0.0.3
+Vendor: Tinu 
+Cartridge-Version: 0.0.4
 Cartridge-Vendor: neo4j
-Source-Url: https://github.com/danielnatali/openshift-neo4j-cartridge.git
+Source-Url: https://github.com/martinos87/openshift-neo4j-cartridge.git
 Categories:
   - service
 Website: http://www.neo4j.org/
