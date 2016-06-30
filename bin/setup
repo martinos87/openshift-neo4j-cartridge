@@ -7,7 +7,6 @@ for dir in tmp pid cache dbs env; do
 	mkdir -p $dir
 done
 
-ln -sfT $CARTRIDGE_HOME/versions/3.0/neo4j-3.0/logs $CARTRIDGE_HOME/logs; chown jelastic:jelastic $CARTRIDGE_HOME/logs;
 
 JAVA_COMMON_PATH="/usr/java"
 JAVA8_DIR=`ls $JAVA_COMMON_PATH | grep jdk1.8 | head -n 1`
