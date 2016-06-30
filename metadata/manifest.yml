@@ -46,10 +46,15 @@ Scaling:
   Min: 1
   Max: 1
 Endpoints:
-  - Private-IP-Name:   DB_HOST
-    Private-Port-Name: DB_PORT
+  - Private-IP-Name:   DB_HOST_WEB_HTTP
+    Private-Port-Name: DB_PORT_WEB_HTTPS
+    Private-Port:      8743
+  - Private-IP-Name:   DB_HOST_WEB
+    Private-Port-Name: DB_PORT_WEB
     Private-Port:      17474
-    Public-Port-Name:  DB_PROXY_PORT
+  - Private-IP-Name:   DB_HOST_BOLT_CONNECTOR
+    Private-Port-Name: DB_PORT_BOLT_CONNECTOR
+    Private-Port:      7687
 Publishes:
   publish-db-connection-info:
     Type: "ENV:NET_TCP:db:connection-info"
