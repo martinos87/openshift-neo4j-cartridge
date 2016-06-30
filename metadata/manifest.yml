@@ -2,11 +2,11 @@ Name: neo4j
 Cartridge-Short-Name: NEO4J
 Display-Name: NEO4J
 Description: "Neo4j is an open-source, high-performance, enterprise-grade NOSQL graph database."
-Version: '2.1'
+Version: '3.0'
 License: GNU GENERAL PUBLIC LICENSE
 License-Url: 
 Vendor: Tinu 
-Cartridge-Version: 0.0.4
+Cartridge-Version: 0.0.5
 Cartridge-Vendor: neo4j
 Source-Url: https://github.com/martinos87/openshift-neo4j-cartridge.git
 Categories:
@@ -40,7 +40,7 @@ Cart-Data:
     Type: environment
     Description: "Unique ID which identified the gear. This value changes between gears."
 Provides:
-  - neo4j-2.1
+  - neo4j-3.0
   - "neo4j"
 Scaling:
   Min: 1
