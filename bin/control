@@ -5,7 +5,7 @@ NEO4J_BIN_DIR=${OPENSHIFT_NEO4J_DIR}versions/3.0/neo4j-3.0/bin
 
 STOPTIMEOUT=10
 FMT="%a %b %d %Y %H:%M:%S GMT%z (%Z)"
-PID=${OPENSHIFT_NEO4J_DIR}versions/3.0/neo4j-3.0/data/neo4j-service.pid
+PID=${OPENSHIFT_NEO4J_DIR}versions/3.0/neo4j-3.0/run/neo4j.pid
 
 NEO4J_CLI="-host $OPENSHIFT_NEO4J_DB_HOST -port $OPENSHIFT_NEO4J_DB_PORT"
  
