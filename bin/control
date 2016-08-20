@@ -1,4 +1,6 @@
 #!/bin/bash
+export JAVA_HOME=/etc/alternatives/java_sdk_1.8.0
+export PATH=$JAVA_HOME/bin:$PATH
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 NEO4J_BIN_DIR=${OPENSHIFT_NEO4J_DIR}versions/3.0/neo4j-3.0/bin
