@@ -45,15 +45,21 @@ Provides:
 Scaling:
   Min: 1
   Max: 1
+Group-Overrides:
+- components:
+  - web-proxy
 Endpoints:
-  - Private-IP-Name:   DB_HOST_WEB_HTTP
+  - Private-IP-Name:   DB_HOST_WEB_HTTPS
     Private-Port-Name: DB_PORT_WEB_HTTPS
     Private-Port:      8743
   - Private-IP-Name:   DB_HOST_WEB
     Private-Port-Name: DB_PORT_WEB
     Private-Port:      17474
-    Public-Port-Name:  DB_PROXY_PORT
-    Protocols:	       [http]
+    Public-Port-Name:  DB_PROXY_PORT_HTTP
+    Protocols: 	      [http,tcp]
+    Mappings:
+    - Frontend: ''
+      Backend: ''    
   - Private-IP-Name:   DB_HOST_BOLT_CONNECTOR
     Private-Port-Name: DB_PORT_BOLT_CONNECTOR
     Private-Port:      7687
