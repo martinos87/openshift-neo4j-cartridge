@@ -23,6 +23,8 @@
 #  * NEO4J_HOME
 #  * NEO4J_CONF
 #  * NEO4J_START_WAIT
+export JAVA_HOME=/etc/alternatives/java_sdk_1.8.0
+export PATH=$JAVA_HOME/bin:$PATH
 
 set -euo pipefail
 [[ "${TRACE:-}" ]] && set -x
