@@ -85,8 +85,6 @@ check_limits() {
 }
 
 setup_java_opts() {
-  . ${OPENSHIFT_NEO4J_DIR}/versions/3.0/neo4j-3.0/bin/variablesparser.sh
-
   JAVA_OPTS=("-server")
 
   if [[ "${dbms_logs_gc_enabled:-}" = "true" ]]; then
