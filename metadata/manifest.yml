@@ -52,6 +52,8 @@ Endpoints:
   - Private-IP-Name:   DB_HOST_WEB
     Private-Port-Name: DB_PORT_WEB
     Private-Port:      17474
+    Public-Port-Name:  DB_PROXY_PORT
+    Protocols:	       [http]
   - Private-IP-Name:   DB_HOST_BOLT_CONNECTOR
     Private-Port-Name: DB_PORT_BOLT_CONNECTOR
     Private-Port:      7687
